@@ -537,12 +537,7 @@ transform: translateY(0%);
   justify-content: space-between;
   align-items: baseline ;
 }
-.footer-socnetworks {
-  /* margin-left: 70px; */
-}
-.footer-concact{
 
-}
 .footer-text {
   display: inline-block;
   margin-bottom: 20px;
@@ -597,6 +592,7 @@ transform: translateY(0%);
     border-radius: 4px;
     background-color: transparent;
     margin-right: 12px;
+    padding-left: 16px;
     transition: border-color var(--transition-time);
 }
 .footer-input:focus, .footer-input:hover{
@@ -606,6 +602,7 @@ transform: translateY(0%);
   display: flex;
  justify-content: baseline;
 }
+
 
 .footer-subscribe-link{
     display: flex;
@@ -632,9 +629,6 @@ font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   margin-right: 10px;
-}
-.subscribe-icon{
-
 }
 
 /* backdrop */
@@ -684,6 +678,12 @@ font-weight: 700;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  background-color: var(--primary-white-color);
+
+  transition: fill var(--transition-time);
+}
+.modal-close-button:hover{
+  fill: var(--accent-colour);
 }
 .modal-tittle{
   font-weight: 700;
@@ -723,6 +723,7 @@ fill: var(--accent-colour);
 .input-wrapper{
   position: relative;
   margin-bottom: 10px;
+  margin-top: 4px;
 }
 
 .modal-textarea{
@@ -755,17 +756,21 @@ fill: var(--accent-colour);
   transition: fill var(--transition-time);
 }
 .input-label{
-  margin-bottom: 4px;
   font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
+    
   
     color: #757575;
 }
 
 .modal-check{
+  width: 100%;
    margin-bottom: 30px;
+   display: flex;
+   text-align: center;
+   justify-content: center;
 }
 
 .checkbox-text{
@@ -778,6 +783,7 @@ fill: var(--accent-colour);
 }
 .checkbox-link{
   color: var(--accent-colour);
+  margin-left: 4px;
 
 }
 
